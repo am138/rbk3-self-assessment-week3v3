@@ -1,9 +1,10 @@
-var FishTable = () => (
+var FishTable = ({fishes}) => (
   <table>
-    <tbody>
-      <FishTableRow />
-      <FishTableRow />
-      <FishTableRow />
+    <tbody className =""FishTable>
+      // <FishTableRow />
+      // <FishTableRow />
+      // <FishTableRow />
+
     </tbody>
   </table>
 );
