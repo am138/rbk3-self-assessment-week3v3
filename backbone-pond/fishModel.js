@@ -12,9 +12,8 @@ var Fish = Backbone.Model.extend({
   toggleDescription: function(){
   	//toggleing the displayInfo attribute
   	this.set('displayInfo', !this.get('displayInfo'));
-  	
   	//re-render FishView
-
+    this.trigger('toggle:description', this);
   }
 
 });
