@@ -1,9 +1,10 @@
-var FishTable = () => (
+var FishTable = (props) => (
+    //here we need to pass the passed data from FishTableRow so it can be be rendered to the DOM.  
   <table>
     <tbody>
       <FishTableRow />
       <FishTableRow />
-      <FishTableRow />
+      <FishTableRow/>
     </tbody>
   </table>
 );
