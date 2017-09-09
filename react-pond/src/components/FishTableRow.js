@@ -1,3 +1,4 @@
+//Refactor the`FishTableRow` components to dynamically render the passed in `fishData`
 class FishTableRow extends React.Component {
   constructor() {
     super();

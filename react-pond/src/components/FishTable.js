@@ -1,3 +1,4 @@
+//Refactor the `FishTable`
 var FishTable = () => (
   <table>
     <tbody>
