@@ -1,9 +1,11 @@
-var FishTable = () => (
+var FishTable = (props) => (
   <table>
     <tbody>
-      <FishTableRow />
-      <FishTableRow />
-      <FishTableRow />
+      // <FishTableRow />
+      // <FishTableRow />
+      // <FishTableRow />
+      // we make map function to go to allelement in array 
+props.fishData.map((fish)<FishTableRow fishes={fish}/>)
     </tbody>
   </table>
 );
