@@ -1,10 +1,16 @@
 class FishTableRow extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       showDescription: false
     };
   }
+// we need event when we click on the fish display its description
+var fishClick= (fish => ({
+  this.setState{
+  currentDescription:fish.description
+  }
+})
 
   // Currently, the image being displayed is hardcoded from tinyurl.com 
   render() {
