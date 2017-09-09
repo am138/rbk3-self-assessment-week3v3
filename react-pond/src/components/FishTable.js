@@ -1,12 +1,15 @@
-var FishTable = () => (
-  <table>
-    <tbody>
-      <FishTableRow />
-      <FishTableRow />
-      <FishTableRow />
-    </tbody>
-  </table>
-);
+class FishTable extend React.Component {
+	render(){
+  		return (<table>
+    		<tbody>
+      			 {this.props.fishes.map(fish => (
+      			 	<FishTableRow {fish}/>       
+   				))}
+    		</tbody>
+  		</table>
+  		)
+	}
+}
 
 // PropTypes tell other developers what `props` a component expects
 // Warnings will be shown in the console when the defined rules are violated
