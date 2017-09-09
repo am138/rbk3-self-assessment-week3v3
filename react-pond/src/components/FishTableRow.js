@@ -1,6 +1,7 @@
 class FishTableRow extends React.Component {
-  constructor() {
-    super();
+    // i need to pass props(fishdata and other proprties since fish data isnt excist ) to this class so i can use its proprties in the other subclasses 
+  constructor(props) {
+    super(props);
     this.state = {
       showDescription: false
     };
@@ -10,15 +11,19 @@ class FishTableRow extends React.Component {
   render() {
     return (
       <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
-        <td className="fish-name">Nemo</td>
+        // change the name of the fish to props.name so it can render dynmically means its no state anymore but interact with the calss methods 
+        <td className="fish-name">{props.name}</td>
         <td>
           <img src="http://tinyurl.com/h8o5szh" />
         </td>
-        {this.state.showDescription ? <td className="fish-description">Does anyone know where my dad is?</td> : null}
+        {this.state.showDescription ? <td className="fish-description"> {props.description} </td> : null}
       </tr>
     )
   }
 }
+        // rendering element 
+        ReactDOM.render=(<FishTableRow />, document.getElementById('app'))
+       
 
 // PropTypes tell other developers what `props` a component expects
 // Warnings will be shown in the console when the defined rules are violated

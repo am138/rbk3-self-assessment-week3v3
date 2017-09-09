@@ -1,9 +1,10 @@
-var FishTable = () => (
+var FishTable = (props) => (
   <table>
     <tbody>
-      <FishTableRow />
-      <FishTableRow />
-      <FishTableRow />
+    // pass data as propreties so i can use them with my class function without getting an error 
+      <FishTableRow name="nemo" description={"where is my food?"} />
+      <FishTableRow name="golden" description={"where is my mother?"} />
+      <FishTableRow name="silver" description={"where is my dad?"}/>
     </tbody>
   </table>
 );
