@@ -10,3 +10,13 @@ var Fish = Backbone.Model.extend({
   }
 
 });
+// a function when clicked on the object it ll change 
+defaults.on("Click","change",this.render)
+//{
+    // change the discription when clicked 
+    
+//    Fish.deafults.description = description
+
+//})
+
+
