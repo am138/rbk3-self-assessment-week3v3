@@ -10,6 +10,10 @@ var FishTable = () => (
 
 // PropTypes tell other developers what `props` a component expects
 // Warnings will be shown in the console when the defined rules are violated
+
+
+
+//firt we call fishtable and we push it in the array 
 FishTable.propTypes = {
   fishes: React.PropTypes.array.isRequired
 };
