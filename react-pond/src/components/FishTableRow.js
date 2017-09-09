@@ -4,6 +4,7 @@ class FishTableRow extends React.Component {
     this.state = {
       showDescription: false
     };
+    console.log(props)
   }
 
   // Currently, the image being displayed is hardcoded from tinyurl.com 
