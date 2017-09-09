@@ -1,6 +1,10 @@
-var FishTable = () => (
+var FishTable = ({fishes}) => (
   <table>
     <tbody>
+    this,fishes.map(fish( ={
+    	return new <FishTableRow />
+    }
+    }))
       <FishTableRow />
       <FishTableRow />
       <FishTableRow />
