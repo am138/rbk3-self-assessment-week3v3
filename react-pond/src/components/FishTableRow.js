@@ -1,8 +1,11 @@
 class FishTableRow extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      showDescription: false
+      showDescription: false,
+      name: props.fish.name,
+      image: props.fish.image,
+      description: props.fish.description
     };
   }
 
@@ -10,16 +13,23 @@ class FishTableRow extends React.Component {
   render() {
     return (
       <tr onClick={() => this.setState({showDescription: !this.state.showDescription})}>
-        <td className="fish-name">Nemo</td>
+        <td className="fish-name">{this.state.name}</td>
         <td>
-          <img src="http://tinyurl.com/h8o5szh" />
+          <img src={this.state.image} />
         </td>
-        {this.state.showDescription ? <td className="fish-description">Does anyone know where my dad is?</td> : null}
+        {this.state.showDescription ? <td className="fish-description">{this.state.description}</td> : null}
       </tr>
     )
   }
 }
-
+// var FishTableRow = ({fish}) => (
+//   <tr >
+//     <td className="fish-name">{fish.name}</td>
+//     <td>
+//       <img src={fish.image} />
+//     </td>
+//       {this.state.showDescription ? <td className="fish-description">{fish.description}</td> : null}
+//   </tr>
 // PropTypes tell other developers what `props` a component expects
 // Warnings will be shown in the console when the defined rules are violated
 FishTableRow.propTypes = {
