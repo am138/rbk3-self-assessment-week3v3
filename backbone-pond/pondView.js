@@ -1,6 +1,8 @@
 var PondView = Backbone.View.extend({
   tagName: 'table',
-  
+  initialize :function(){
+  this.collection.fishModel.on('onClick',this.render,this);
+},
   render: function() {
     this.$el.html('');
     this.collection.each(function(fishModel) {
