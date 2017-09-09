@@ -5,7 +5,6 @@ class FishTableRow extends React.Component {
       showDescription: false
     };
   }
-kkkk
   // Currently, the image being displayed is hardcoded from tinyurl.com 
   render() {
     return (
