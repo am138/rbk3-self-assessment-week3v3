@@ -21,7 +21,7 @@ describe('toggleDescription', function() {
 
   it('should show the description text in the `td` element', function() {
     var goldfish = myPond.findWhere({name: 'Goldfish'});
-    var $goldfishRow = $('tr:contains("Goldfish")');
+    var $goldfishRow = $('  :contains("Goldfish")');
 
     goldfish.set('displayInfo', false);
     $goldfishRow.children().length.should.equal(2);
