@@ -1,7 +1,7 @@
 var FishTable = ({fishes}) => (
   <table>
     <tbody>
-      {fishes.map((fish) => (<FishTableRow fish={fish} />)  )}
+      {fishes.forEach((fish) => (<FishTableRow fish={fish} />)  )}
     </tbody>
   </table>
 );
