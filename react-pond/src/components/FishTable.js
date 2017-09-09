@@ -1,11 +1,17 @@
-var FishTable = () => (
+var FishTable = (props) => (
   <table>
-    <tbody>
-      <FishTableRow />
-      <FishTableRow />
-      <FishTableRow />
-    </tbody>
+    // <tbody>
+    //   <FishTableRow />
+    //   <FishTableRow />
+    //   <FishTableRow />
+    // </tbody>
+
+    {props.fishes.map( fish => 
+    	<FishTableRow  fish = {fish}/>
+
+    	)}
   </table>
+    
 );
 
 // PropTypes tell other developers what `props` a component expects
