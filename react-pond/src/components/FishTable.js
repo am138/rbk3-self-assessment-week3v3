@@ -1,9 +1,13 @@
-var FishTable = () => (
+var FishTable = (fish,handleOnClick) => (
   <table>
     <tbody>
-      <FishTableRow />
-      <FishTableRow />
-      <FishTableRow />
+      {fishes.map(fish)=>(
+      	<
+      	fish={fish}
+      	key={fishes.id.fishId}
+      	handleOnClick={handleOnClick}   
+      	/>)
+      
     </tbody>
   </table>
 );
