@@ -1,14 +1,16 @@
 var FishTable = (props) => (
   <table>
+  <div>
     <tbody>
     	{props.fishes.map((fish) =>(
 			 <FishTableRow 
 			       fish={fish} 
-			       key={key.} // here should put a key for each fish 
+			       key={fish.id} // here should put a key for each fish 
 			       />
     	)
     )}		
     </tbody>
+    </div>
   </table>
 );
 

@@ -1,5 +1,5 @@
 class FishTableRow extends React.Component {
-  constructor(props) {
+  constructor(props) { 
     super(props);
     this.state = {
       showDescription: false
@@ -22,6 +22,7 @@ class FishTableRow extends React.Component {
 }
 
 // PropTypes tell other developers what `props` a component expects
+
 // Warnings will be shown in the console when the defined rules are violated
 FishTableRow.propTypes = {
   fish: React.PropTypes.object.isRequired
